@@ -7,7 +7,7 @@ pacman -S bspwm sxhkd picom polybar dmenu alacritty nitrogen lightdm lightdm-gtk
 
 cd ~/.config/
 mkdir bspwm sxhkd polybar picom
-cp /usr/share/doc/bspwm/examples/bspwmrc bspwm/
+cp /usr/share/doc/bspwm/examples/bspwmrc bspwm/ </br>
 cp /usr/share/doc/bspwm/examples/sxhkdrc sxhkd/
 cp /etc/xdg/picom.conf picom/
 cp /etc/polybar/config.ini polybar/
