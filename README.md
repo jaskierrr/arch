@@ -27,4 +27,31 @@ polybar &
 sudo pacman -S $(pacman -Sgq nerd-fonts)
 # mediakeys
 install playerctl for pipewire
-https://pastebin.com/5RER5SfG
+
+#Raise volume
+XF86AudioRaiseVolume
+  pactl set-sink-volume @DEFAULT_SINK@ +5%
+ 
+#Lover volume
+XF86AudioLowerVolume
+  pactl set-sink-volume @DEFAULT_SINK@ -5%
+ 
+#Mute
+XF86AudioMute
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
+ 
+#Play
+XF86AudioPlay
+    playerctl play-pause
+ 
+#Next
+XF86AudioNext
+    playerctl next
+ 
+#previous
+XF86AudioPrev
+    playerctl previous
+ 
+#Stop
+XF86AudioStop
+    playerctl stop
