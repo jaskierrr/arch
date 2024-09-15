@@ -5,8 +5,8 @@ commands for arch
 
 pacman -S bspwm sxhkd picom polybar dmenu alacritty nitrogen lightdm lightdm-gtk-greeter thunar
 
-cd ~/.config/
-mkdir bspwm sxhkd polybar picom
+cd ~/.config/  
+mkdir bspwm sxhkd polybar picom  
 cp /usr/share/doc/bspwm/examples/bspwmrc bspwm/  
 cp /usr/share/doc/bspwm/examples/sxhkdrc sxhkd/  
 cp /etc/xdg/picom.conf picom/  
