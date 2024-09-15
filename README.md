@@ -25,33 +25,34 @@ polybar &
 
 # all nerd-fonts install
 sudo pacman -S $(pacman -Sgq nerd-fonts)
-# mediakeys
-install playerctl for pipewire
 
-#Raise volume
-XF86AudioRaiseVolume
-  pactl set-sink-volume @DEFAULT_SINK@ +5%
+# mediakeys
+install playerctl for pipewire  
+
+#Raise volume  
+XF86AudioRaiseVolume  
+  pactl set-sink-volume @DEFAULT_SINK@ +5%  
  
-#Lover volume
-XF86AudioLowerVolume
-  pactl set-sink-volume @DEFAULT_SINK@ -5%
+#Lover volume  
+XF86AudioLowerVolume  
+  pactl set-sink-volume @DEFAULT_SINK@ -5%  
  
-#Mute
-XF86AudioMute
-  pactl set-sink-mute @DEFAULT_SINK@ toggle
+#Mute  
+XF86AudioMute  
+  pactl set-sink-mute @DEFAULT_SINK@ toggle  
  
-#Play
-XF86AudioPlay
-    playerctl play-pause
+#Play  
+XF86AudioPlay  
+    playerctl play-pause  
  
-#Next
-XF86AudioNext
-    playerctl next
+#Next  
+XF86AudioNext  
+    playerctl next  
+   
+#previous  
+XF86AudioPrev  
+    playerctl previous  
  
-#previous
-XF86AudioPrev
-    playerctl previous
- 
-#Stop
-XF86AudioStop
-    playerctl stop
+#Stop  
+XF86AudioStop  
+    playerctl stop  
